@@ -1,7 +1,6 @@
 ﻿using Dapper.Contrib.Extensions;
 using MSE.CVApp.DataAccess.Interfaces;
 using MSE.CVApp.Entities.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;

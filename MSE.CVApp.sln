@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSE.CVApp.Entities", "MSE.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSE.CVApp.DataAccess", "MSE.CVApp.DataAccess\MSE.CVApp.DataAccess.csproj", "{816B9E7C-A6E6-4476-98E2-E3E05CA1BD09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSE.CVApp.DTO", "MSE.CVApp.DTO\MSE.CVApp.DTO.csproj", "{BB33ED65-FD8B-40D4-AB76-5682FB4FEE8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{816B9E7C-A6E6-4476-98E2-E3E05CA1BD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{816B9E7C-A6E6-4476-98E2-E3E05CA1BD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{816B9E7C-A6E6-4476-98E2-E3E05CA1BD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB33ED65-FD8B-40D4-AB76-5682FB4FEE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB33ED65-FD8B-40D4-AB76-5682FB4FEE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB33ED65-FD8B-40D4-AB76-5682FB4FEE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB33ED65-FD8B-40D4-AB76-5682FB4FEE8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
