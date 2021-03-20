@@ -2,7 +2,7 @@
 
 namespace MSE.CVApp.DTO.DTOs.InterestDTOs
 {
-    public class SkillAddDTO : IDTO
+    public class InterestAddDTO : IDTO
     {
         public string Description { get; set; }
     }

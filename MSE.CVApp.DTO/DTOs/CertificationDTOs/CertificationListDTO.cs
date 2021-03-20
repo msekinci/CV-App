@@ -2,7 +2,7 @@
 
 namespace MSE.CVApp.DTO.DTOs.CertificationDTOs
 {
-    public class ExperienceListDTO : IDTO
+    public class CertificationListDTO : IDTO
     {
         public int Id { get; set; }
         public string Description { get; set; }
