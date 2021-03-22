@@ -26,6 +26,8 @@ namespace MSE.CVApp.Business.IoC.Microsoft
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(DPGenericRepository<>));
             services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
+            services.AddScoped<IAppUserRepository, DpAppUserRepository>();
+            services.AddScoped<IAppUserService, AppUserManager>();
 
             services.AddTransient<IValidator<AppUserUpdateDTO>, AppUserUpdateValidator>();
             services.AddTransient<IValidator<CertificationAddDTO>, CertificationAddValidator>();
