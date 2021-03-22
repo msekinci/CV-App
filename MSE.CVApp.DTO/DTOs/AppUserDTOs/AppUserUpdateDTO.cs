@@ -1,4 +1,4 @@
-﻿,using MSE.CVApp.DTO.Interfaces;
+﻿using MSE.CVApp.DTO.Interfaces;
 
 namespace MSE.CVApp.DTO.DTOs.AppUserDTOs
 {
