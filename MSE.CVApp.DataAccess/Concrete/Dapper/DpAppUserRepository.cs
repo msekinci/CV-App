@@ -15,8 +15,20 @@ namespace MSE.CVApp.DataAccess.Concrete.Dapper
 
         public bool CheckUser(string userName, string password)
         {
-            var user = _dbConnection.Query<AppUser>("select * from AppUsers where UserName = @userName and Password = @password");
+            var user = _dbConnection.QueryFirstOrDefault<AppUser>("select * from AppUsers where UserName=@userName and Password=@password", new
+            {
+                userName,
+                password
+            });
             return user != null;
+        }
+
+        public AppUser FindByName(string userName)
+        {
+            return _dbConnection.QueryFirstOrDefault<AppUser>("select * from AppUsers where UserName=@userName", new
+            {
+                userName
+            });
         }
     }
 }

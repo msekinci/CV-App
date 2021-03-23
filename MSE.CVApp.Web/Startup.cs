@@ -32,6 +32,7 @@ namespace MSE.CVApp.Web
                 options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Auth/Login");
             });
             services.AddCustomDependencies(Configuration);
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews().AddFluentValidation();
         }
 

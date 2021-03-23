@@ -28,6 +28,8 @@ namespace MSE.CVApp.Business.IoC.Microsoft
             services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
             services.AddScoped<IAppUserRepository, DpAppUserRepository>();
             services.AddScoped<IAppUserService, AppUserManager>();
+            services.AddScoped<ISocialMediaRepository, DpSocialMediaRepository>();
+            services.AddScoped<ISocialMediaService, SocialMediaManager>();
 
             services.AddTransient<IValidator<AppUserUpdateDTO>, AppUserUpdateValidator>();
             services.AddTransient<IValidator<CertificationAddDTO>, CertificationAddValidator>();

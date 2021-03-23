@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Dapper.Contrib.Extensions;
+using System;
 
 namespace MSE.CVApp.Entities.Concrete.BaseClasses
 {
     public class BaseEntity
     {
+        [Key]
         public int Id { get; set; }
         public string Title { get; set; }
         public string SubTitle { get; set; }

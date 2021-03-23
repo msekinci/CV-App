@@ -1,9 +1,6 @@
 ﻿using MSE.CVApp.Business.Interfaces;
 using MSE.CVApp.DataAccess.Interfaces;
 using MSE.CVApp.Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MSE.CVApp.Business.Concrete
 {
@@ -20,6 +17,11 @@ namespace MSE.CVApp.Business.Concrete
         public bool CheckUser(string userName, string password)
         {
             return _appUserRepository.CheckUser(userName, password);
+        }
+
+        public AppUser FindByName(string userName)
+        {
+            return _appUserRepository.FindByName(userName);
         }
     }
 }

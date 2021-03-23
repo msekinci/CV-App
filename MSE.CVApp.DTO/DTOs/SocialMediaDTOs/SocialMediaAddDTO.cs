@@ -6,6 +6,6 @@ namespace MSE.CVApp.DTO.DTOs.SocialMediaDTOs
     {
         public string Link { get; set; }
         public string Icon { get; set; }
-        public int AppUserId { get; set; }
+        public int AppUserId { get; set; } = 1;
     }
 }
