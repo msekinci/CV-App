@@ -8,7 +8,6 @@ namespace MSE.CVApp.Business.ValidationRules
         public SocialMediaUpdateValidator()
         {
             RuleFor(x => x.Id).InclusiveBetween(1, int.MaxValue).WithMessage("Id is not valid");
-            RuleFor(x => x.AppUserId).InclusiveBetween(1, int.MaxValue).WithMessage("AppUserId is not valid");
             RuleFor(x => x.Icon).NotEmpty().WithMessage("Icon is required");
             RuleFor(x => x.Link).NotEmpty().WithMessage("Link is required");
         }

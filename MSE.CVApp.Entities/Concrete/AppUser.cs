@@ -1,10 +1,12 @@
-﻿using MSE.CVApp.Entities.Interfaces;
+﻿using Dapper.Contrib.Extensions;
+using MSE.CVApp.Entities.Interfaces;
 
 namespace MSE.CVApp.Entities.Concrete
 {
     [Dapper.Contrib.Extensions.Table("AppUsers")]
     public class AppUser : IEntity
     {
+        [Key]
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
