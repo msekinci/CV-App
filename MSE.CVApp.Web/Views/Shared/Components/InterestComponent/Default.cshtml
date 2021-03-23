@@ -1,0 +1,10 @@
+﻿@model List<MSE.CVApp.DTO.DTOs.InterestDTOs.InterestListDTO>
+<section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Interests</h2>
+        @foreach (var item in Model)
+        {
+            <p>@item.Description</p>
+        }
+    </div>
+</section>
